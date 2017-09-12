@@ -11,7 +11,7 @@
 Central Track, Patuxent Wildlife Research Refuge   
 12000 Beech Forest Drive  
 Laurel, MD  
-(39.05367, 76.81626)  
+Coordinates (39 3'13.21"N,  76 48'58.52"W)  
 
 **Communication:** Have questions? Join our Flock team @ https://quhacktheharvesthackathon.flock.com?i=7ev1vvrwzl47lzl7  
 **RSVP:** TBD  
