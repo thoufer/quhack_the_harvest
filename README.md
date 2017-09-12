@@ -1,20 +1,21 @@
 
-**Project Name:** Qu(H)ack the Harvest
-
-**Project URL:** Stay tuned! USGS is developing a user guide on their Community for Data Integration site
+**Project Name:** Qu(H)ack the Harvest  
+**Project URL:** Stay tuned! USGS is developing a user guide on their Community for Data Integration site  
 
 
 # Important Details
 
-**Date:** Saturday, September 23, 2007
+**Date:** Saturday, September 23, 2007  
+**Time:** 10-6  
+**Location:**   
+Central Track, Patuxent Wildlife Research Refuge   
+12000 Beech Forest Drive  
+Laurel, MD  
+(39.05367, 76.81626)  
 
-**Time:** 10-6
+**Communication:** Have questions? Join our Flock team @ https://quhacktheharvesthackathon.flock.com?i=7ev1vvrwzl47lzl7  
+**RSVP:** TBD  
 
-**Location:** Central Track, Patuxent Wildlife Research Refuge, 12000 Beech Forest Drive, Laurel, MD (39.05367, 76.81626)
-
-**Communication:** Have questions? Join our Flock team @ https://quhacktheharvesthackathon.flock.com?i=7ev1vvrwzl47lzl7
-
-**RSVP:** TBD
 
 # Project Purpose
 The USFWS Division of Migratory Bird Management is modernizing a critical monitoring program: the 66 year old **Migratory Bird Harvest Survey** is moving from paper to the Internet. This digital transformation will allow the program to significantly improve both operational efficiency and data quality.  Moving online will also expand our ability to communicate with survey respondents (migratory bird hunters) and the general public.
