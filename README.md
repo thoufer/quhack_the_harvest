@@ -14,7 +14,7 @@ Laurel, MD
 Coordinates (39 3'13.21"N,  76 48'58.52"W)  
 
 **Communication:** Have questions? Join our Flock team @ https://quhacktheharvesthackathon.flock.com?i=7ev1vvrwzl47lzl7  
-**RSVP:** Please RSVP in the RSVP channel of the quhack_the_harvest team.  Please note if you are non-FWS since this is a gated facility, and we will need to make sure to get you access.
+**RSVP:** Please RSVP in the RSVP channel of the quhack_the_harvest team.  Please note if you are non-FWS/USGS since this is a gated facility, and we will need to make sure to get you access.
 
 
 # Project Purpose
