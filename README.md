@@ -36,3 +36,25 @@ What we need:
 2. Graphical displays and maps of (related) bird distribution data via, e.g., [eBird](http://ebird.org) or [USGS BISON](https://bison.usgs.gov/).
 3. Plain language descriptions of the harvest data and its use in wildlife management. Follow this [link](http://www.fws.gov/birds/surveys-and-data/harvest-surveys.php) to learn more about harvest surveys!
 4. Ideas and plans for an accessible, informative, and easy to maintain webpage to display survey results.
+
+Other Information
+------------------
+
+The 2005 National Duck Hunter Survey
+[http://flyways.us/surveys-and-monitoring/hunter-surveys/national-duck-hunter-survey](http://flyways.us/surveys-and-monitoring/hunter-surveys/national-duck-hunter-survey)
+
+2016 National Survey of Fishing, Hunting, and Wildlife-Associated Recreation
+[http://wsfrprograms.fws.gov/subpages/nationalsurvey/national_survey.htm](http://wsfrprograms.fws.gov/subpages/nationalsurvey/national_survey.htm)
+
+Detailed information, including demographics, from the 2011 National Survey of Fishing, Hunting, and Wildlife-Associated Recreation:
+[http://www.census.gov/prod/2012pubs/fhw11-nat.pdf](http://www.census.gov/prod/2012pubs/fhw11-nat.pdf)
+
+
+Duck hunting forums:
+[http://www.refugeforums.com/forums/](http://www.refugeforums.com/forums/)
+[http://www.duckhuntingchat.com/](http://www.duckhuntingchat.com/)
+[http://www.nodakoutdoors.com/forums/](http://www.nodakoutdoors.com/forums/)
+[http://www.duckboats.net/cgi-bin/forum/gforum.cgi](http://www.duckboats.net/cgi-bin/forum/gforum.cgi)
+
+
+
