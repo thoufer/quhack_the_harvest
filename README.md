@@ -12,6 +12,8 @@ Central Track, Patuxent Wildlife Research Refuge
 12000 Beech Forest Drive  
 Laurel, MD  
 Coordinates (39 3'13.21"N,  76 48'58.52"W)  
+**Connecting Remotely**
+Please call in to this Google Hangout mtg at 10 a.m. EST: https://plus.google.com/hangouts/_/calendar/c2lsdmVyc21ld0BnbWFpbC5jb20.453seh5cdoc5lvgcu10rcm7hr6?hs=121
 
 **Communication:** Have questions? Join our Flock team @ https://quhacktheharvesthackathon.flock.com?i=7ev1vvrwzl47lzl7  
 **RSVP:** Please RSVP in the RSVP channel of the quhack_the_harvest team.  Please note if you are non-FWS/USGS since this is a gated facility, and we will need to make sure to get you access.
