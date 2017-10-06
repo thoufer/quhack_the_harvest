@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <style>
+   .bar {
+      fill: #4b79b4; /* lightsteelblue family */
+    }
+
+    .bar.active {
+      fill: #b0c4de;
+    }
+
+    .current {
+      fill:  #f08080/*lightcoral family*/
+    }
+
+    .current.active {
+      fill: #f7BBBB;
+    }
+    div.tooltip {
+      position: absolute;
+      text-align: left;
+      width: 125px;
+      padding: 6px;
+      font: 12px sans-serif;
+      background: lightgray;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+  <div class="container" id="content"></div>
+  <script>
+  var url = 'https://nzimpfer.pythonanywhere.com/api/harvest_year'
+
+  // set the dimensions and margins of the graph
+  var margin = {top: 20, right: 20, bottom: 70, left: 60},
+      width = 900 - margin.left - margin.right,
+      height = 650 - margin.top - margin.bottom;
+
+  // set the ranges
+  var x = d3.scaleBand()
+            .range([0, width])
+            .padding(0.2);
+
+  var y = d3.scaleLinear()
+            .range([height, 0]);
+
+  var div = d3.select("#content").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+  var yAxis = d3.axisRight(y)
+                .tickSize(width)
+                .ticks(10);
+
+  // append the svg object to the chart div
+  var svg = d3.select("#content").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+
+  // get the data and create chart
+  d3.json(url, function(error, data) {
+    if (error) throw error;
+
+    //format data
+    data.forEach(function(d) {
+        d.harvest = +d.harvest;
+      });
+
+    x.domain(data.map(function(d) { return d.year; }));
+    y.domain([0, d3.max(data, function(d) { return d.harvest; })]);
+
+    //append rectangles for the bar chart
+    svg.selectAll(".bar")
+        .data(data)
+      .enter().append("rect")
+        .each(function(d, i) {
+          if (i === data.length - 1) {
+            d3.select(this).attr("class", "current")
+          }
+          else {
+            d3.select(this).attr("class", "bar")
+          }
+        })
+        .attr("x", function(d) { return x(d.year); })
+        .attr("width", x.bandwidth())
+        .attr("y", function(d) { return y(d.harvest); })
+        .attr("height", function(d) { return height - y(d.harvest); })
+      .on("mouseover", function(d) {
+        d3.select(this)
+          .classed("active", true);
+          //.style("opacity", .7);
+
+        div.transition()
+          .duration(200)
+          .style("opacity", .9);
+
+        div.html("<strong>Year:</strong> " + d.year + "<br/>" +  "<strong>Estimate:</strong> " + d3.format(",d")(d.harvest))
+          .style("left", (d3.event.pageX - 125/2) + "px")
+          .style("top", (y(d.harvest) - 25) + "px")
+
+      })
+      .on("mouseout", function(d, i) {
+        div.transition()
+          .duration(200)
+          .style("opacity", 0)
+
+        d3.select(this)
+          .classed("active", false)
+          //.style("opacity", "1");
+      });
+
+    // add xAxis
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x)
+              .tickValues(x.domain().filter(function(d) { return d % 10 === 0; })))
+        .selectAll("text")
+          .attr("y", 3)
+          .attr("x", 14)
+          .attr("dy", ".35em")
+          .attr("transform", "rotate(45)")
+          .style("text-anchor", "start")
+          .style("font-size", "14px");
+
+    // add y-axis
+    svg.append("g")
+      .call(customYaxis);
+  });
+
+  function customYaxis(g) {
+    g.call(yAxis);
+    g.select(".domain").remove();
+    g.selectAll(".tick:not(:first-of-type) line").attr("stroke", "lightgray");
+    g.selectAll(".tick text")
+      .attr("x", -5)
+      .attr("dy", -4)
+      .style("text-anchor", "end")
+      .style("font-size", "14px");
+  }
+
+  </script>
+</body>
+</html>
