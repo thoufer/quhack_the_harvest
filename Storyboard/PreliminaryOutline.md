@@ -5,7 +5,7 @@ From Hackathon Sept 26, 2017, Patuxent NWR
 
 Brief background and objectives of the Survey, but might want to start users in the next section, but where they can see the Intro section greyed out and "clickable."
 
-**HIP Registration, Sampling for Diary Survey**
+**Harvest Informatio Program (HIP) Registration, Sampling for Diary Survey**
   + Why do I have to register for HIP?
   + HIP registration questions are not the Survey!!!  Everyone registers, only some get selected 
   + *Maybe a simple illustration of Sampling—can we make it dynamic?*
@@ -20,7 +20,7 @@ Brief background and objectives of the Survey, but might want to start users in 
   + Diary survey gives total harvest….how to get harvest by species? PCS….
   
   
-**PCS Survey**—How do I get picked?  If I’m selected, what happens? (Some pics of wings and envelopes)
+**Parts Collection Survey (PCS Survey)**—How do I get picked?  If I’m selected, what happens? (Some pics of wings and envelopes)
   + How do the ducks get identified?
 	  1. Link to Carney PDFs
 		2. *Link to instructional videos (need proper dress, lighting, dubbed over script)*
