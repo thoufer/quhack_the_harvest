@@ -1,4 +1,9 @@
-Intro
+﻿Intro
+
+[Paul, wearing USFWS branded clothing]
+Hi, I’m Paul Padding with the US Fish and Wildlife Service, and this is the first video in a series designed to help you identify ducks by their wings. Many so-called brown ducks look similar, but may have different bag limits, so learning to distinguish them can mean the difference between stopping at 2 or 3 birds or filling your limit. Let’s start with a familiar species, the mallard.
+
+
 _[Photo of mallard drake(s) and hen(s).]_
 
 It’s easy to tell the sex of a mallard in November or December, when the birds are wearing their breeding plumage.  Greenheads are drakes, and the brown mallards are hens.  But many of the drakes, especially the young-of-the-year ones, haven’t colored up yet in late September and early October, and that’s when duck hunting seasons open in a lot of the northern states.  It’s harder to tell one of those drakes from a hen, even after you’ve bagged one and have it in hand.  A reliable way to do that is to look at the wing plumage.
@@ -29,3 +34,6 @@ This is a wing from a young-of-the-year female.  The wing feathers on immature d
 Walt’s banding photo of immature male.
 Here’s a photograph of a young-of-the-year mallard that was captured and banded in mid or late August.  A month or so later, on opening day of duck season in the north, it probably didn’t look much different than this.  Bigger, but its colors likely weren’t much different.  But even though it’s a brown duck, you can easily tell from its wing that it’s a male because the wing is grayish and the white bar doesn’t extend over the tertial feathers.
 
+Either a short clip showing Paul speaking, or his voice over another duck photo
+
+We hope you’ve enjoyed this video and will find it helpful.  Please let us know in the comments below, and feel free to provide suggestions for future waterfowl id videos.
