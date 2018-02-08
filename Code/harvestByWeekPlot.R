@@ -9,13 +9,24 @@
 # sp is a selected species OR Ducks or Geese  ... 
 # title of figure
 # interval = number of years to average
-# st = state or states selected
+# st = state or states selected ... st can also specify region: NE, SE, NW, SW for four quadrat division of CONUS
 
-harvestByWeek.plt <- function(data,st="MI",sp="Ducks",title,interval=10,plotInNewWindow=TRUE) {
+harvestByWeek.plt <- function(data,st="MI",sp="Ducks",title="",interval=10,plotInNewWindow=TRUE) {
 
   library(tidyverse)
   library(lubridate)
   
+  if (st=="NW") {
+    st<-c("WA","OR","ID","MT","WY","ND","SD","NE","IA","MN")
+  } else {
+    if (st=="SW") {
+      st<-c("CA","NV","UT","AZ","CO","NM","KS","OK","TX","MO","AR","LA")
+    } else {if (st=="NE") {
+      st<-c("WI","IL","IN","MI","OH","WV","PA","NY","MD","DE","NJ","CT","RI","MA","VT","NH","ME")
+    } else {if (st=="SE") {
+      st<-c("KY","VA","TN","NC","MI","AL","GA","SC","FL","DC")
+      }}} 
+    }
   
   if (!(sp %in% unique(data$species)) & !(sp %in% c("Ducks","Geese"))) {
         cat("incorrect species code! \n\n") 
