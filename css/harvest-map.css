@@ -25,19 +25,19 @@ path:hover, circle:hover {
   left: 0px;
   z-index: 1;
   background-color: #ffffff;
-  border: 2px solid #BF0A30;
+  border: 1px solid gray;
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
 }
-h1{ 
+/*h1{ 
     color:black;
     font-size:32px;
     text-align:center;
     display:inline-block;
     position:relative;
     width:100%; 
-   }
+   }*/
    .statesmap{
 	float:left;
 	width:100%;
@@ -101,10 +101,10 @@ div.mytable {
 }
 */
 
-footer{
+/*footer{
 	margin-bottom: 0;
 }
-
+*/
 
 
 /*

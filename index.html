@@ -18,9 +18,9 @@
 	<link type="text/css" rel="stylesheet" media="all" href="https://www.fws.gov/birdhabitat/css/mobile-menu/jquery.mmenu.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="https://www.fws.gov/birdhabitat/css/mobile-menu/extensions/jquery.mmenu.positioning.css" />
 	<link rel="stylesheet" href="https://www.fws.gov/birdhabitat/css/custom-styling.css">
-  <link rel="stylesheet" href="css/activity-map.css">
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  	<link rel="stylesheet" href="css/activity-map.css">
+  	<script src="https://d3js.org/d3.v4.min.js"></script>
+  	<script src="https://d3js.org/topojson.v2.min.js"></script>
 
 <style>
 	.tooltip {
@@ -34,7 +34,7 @@
 		background-color: white;
 		color: black;
 		text-align: center;
-		font-size: 60%;
+		font-size: 80%;
 		border: 1px solid gray;
 		line-height: 120%;
 		border-radius: 6px;
@@ -81,57 +81,67 @@
 			<div id="content">
 				<div id="page-headings">
 					<!-- TemplateBeginEditable name="headings" -->
-					<h1>Harvest Surveys</h1>
-					<h2>What do we learn from our surveys?</h2>
+					<h1>Harvest Surveys Visualizations</h1>
+					<h2>Why is participation in harvest surveys so important?</h2>
 					<!-- TemplateEndEditable -->
 				</div>
 				<div id="content-area">
 					<!-- TemplateBeginEditable name="content" -->
-					<p>Information that hunters provide helps the USFWS and state wildlife agencies set annual hunting regulations that minimize the risk of over-harvest and provide the most, and hopefully the best possible, hunting opportunity.</p>
-					<p>The Harvest 'Diary' surveys tell us how many people hunted ducks (... or geese, or doves, or woodcock, or ...) in each state, how many days they hunted, when and in what county, and how many birds they harvested each year.</p>
-					<p>We have conducted these surveys for many years ... years with short hunting seasons, long seasons, various daily bag limits, and a range of season dates ... and we can predict what the harvest will be for a specific season length and daily bag limit.</p>
+					Hunters provide information that helps the USFWS and state wildlife agencies set annual hunting regulations that minimize the risk of over-harvest and provide the most, and hopefully the best possible, opportunities for hunting. The Harvest 'Diary' surveys tell us how many people hunted ducks (... or geese, or doves, or woodcock, or ...) in each state, how many days they hunted, when and in what county they hunted, and how many birds were harvested each year. Because these surveys have been conducted for many years (... years with short hunting seasons, long seasons, various daily bag limits, and a range of season dates ...), we can predict what the harvest will be for a specific season length and daily bag limit.
 
-					<p><strong>Visualizations</strong></p>
+					<!--<p><strong>Visualizations</strong></p>-->
 					<div class="overflow-hidden"><!--visualization #1-->
-            <div id="container">
-              <div id="map-container">
-                <svg id="map" width="960" height="600"
-                  viewBox="0 0 960 600"
-                  preserveAspectRatio="xMinYMid meet"></svg>
-              </div>
+						<div id="container">
+						  <div id="map-container">
+							<svg id="map" width="960" height="600"
+							  viewBox="0 0 960 600"
+							  preserveAspectRatio="xMinYMid meet"></svg>
+						  </div>
 
-              <div id="data-panel">
-                <div class="state">
-                    <span class="label state" id="state-value">Select a state.</span><br>
-                    <span class="label state">2012-2016 Average</span>
-                </div>
-                <div class="data-value">
-                  <span class="label">Days afield per hunter: </span>
-                  <span class="label" id="days-value"></span>
-                </div>
-                <div>
-                  <span class="label">Duck harvest per season: </span>
-                  <span class="label" id="bag-value"></span>
-                </div>
-              </div>
+						  <div id="data-panel">
+							<div class="state">
+								<span class="label state" id="state-value">Select a state.</span><br>
+								<span class="label state">2012-2016 Average</span>
+							</div>
+							<div class="data-value">
+							  <span class="label">Days afield per hunter: </span>
+							  <span class="label" id="days-value"></span>
+							</div>
+							<div>
+							  <span class="label">Duck harvest per season: </span>
+							  <span class="label" id="bag-value"></span>
+							</div>
+						  </div></div>
 
-						<div style="float:left;"><em>How do we know the total number of <br/>waterfowl hunters in a state?</em></div>
-						<div style="float:left" class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
-						<span class="tooltiptext">Hunters are required to register for the Harvest Information Program (HIP) in each state they hunt migratory game birds. Methods of registration vary from state to state - some states require a separate permit, others offer free HIP registration over the internet, etc. - so, before you hunt game birds, be sure you know what the state requires, especially if you're a nonresident!</span></div></p>
-						<p><div style="float:left;"><em>Someone registering for HIP might wonder <br/>"I get asked questions about my hunting when <br/>I register, is that all there is to the survey?"</em></div>
-						<div style="float:left" class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
-						<span class="tooltiptext">No! Questions asked during HIP registration about how many birds you harvested the previous year help make sure we send surveys to the right people ... so that, for example, we send most of our dove surveys to people who hunt doves, rather than to waterfowl hunters.</span></div>
-						</p>
 					</div>
+                    <div>
+						<blockquote style="font-size: 80%; line-height: 160%">
+							<p><em style="float: left; padding-right: 5px">How do we know the total number <br>of waterfowl hunters in a state?</em>
+							<span class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
+							<span class="tooltiptext">Hunters are required to register for the Harvest Information Program (HIP) in each state they hunt migratory game birds. Methods of registration vary from state to state - some states require a separate permit, others offer free HIP registration over the internet, etc. - so, before you hunt game birds, be sure you know what the state requires, especially if you're a nonresident!</span></span></p>
+							
+							<p><em style="float: left; padding-right: 5px">Someone registering for the Harvest Information Program (HIP) might wonder: <br>"I get asked questions about my hunting when I register, is that all there is to the survey?"</em> 
+							<span class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
+							<span class="tooltiptext">No! Questions asked during HIP registration about how many birds you harvested the previous year help make sure we send surveys to the right people ... so that, for example, we send most of our dove surveys to people who hunt doves, rather than to waterfowl hunters.</span></span></p>
+						</blockquote>
+						
+					<br>
+						<p>We use state estimates of hunter numbers and the Diary survey responses to estimate harvest and hunting effort. Using ducks as an example, we multiply the average number of days people reported hunting ducks by the number of duck hunters to estimate the number of days people hunted ducks. Same thing for harvest - average number of ducks shot, as reported on the Diary surveys, times number of duck hunters gives us estimates of the number of ducks shot in each state.</p>
 
+						<p>The Diary survey provides other important information - when and where birds are harvested. Although the USFWS decides the season length every year, each state wildlife agency chooses the hunting dates for their state. They try to select the dates that will provide the best hunting. Diary survey participants tell us the days they hunted and how many birds they harvested on each day. So, a state agency can look at the number of birds shot on each date for the past, say, 10 years, to figure out when the most birds are usually harvested in their state, and set their season to cover those dates.</p>
+                    </div>
+													
 					<div class="overflow-hidden"><!--visualization #2-->
 						<p class="img-right"><img src="https://www.fws.gov/birdhabitat/img/home-cta/duck-stamp.jpg" alt="" /></p>
-						<p class="overflow-hidden">Let's put the dynamic graph here</p>
+						<p class="overflow-hidden"><strong>dynamic bar graph here EMILY TO PROVIDE NATE DATA</strong>
+						We use state estimates of hunter numbers and the Diary survey responses to estimate harvest and hunting effort. Using ducks as an example, we multiply the average number of days people reported hunting ducks by the number of duck hunters to estimate the number of days people hunted ducks. Same thing for harvest - average number of ducks shot, as reported on the Diary surveys, times number of duck hunters gives us estimates of the number of ducks shot in each state.</p>
+
+						<p>The Diary survey provides other important information - when and where birds are harvested. Although the USFWS decides the season length every year, each state wildlife agency chooses the hunting dates for their state. They try to select the dates that will provide the best hunting. Diary survey participants tell us the days they hunted and how many birds they harvested on each day. So, a state agency can look at the number of birds shot on each date for the past, say, 10 years, to figure out when the most birds are usually harvested in their state, and set their season to cover those dates.</p>
 					</div>
 
 					<div class="overflow-hidden"><!--visualization #3-->
-						<p class="img-left"><img src="https://www.fws.gov/birdhabitat/img/home-cta/duck-stamp.jpg" alt="" /></p>
-						<p class="overflow-hidden">And this will be Theo's map</p>
+						<p class="img-left"><a href="harvest-map.html"><img src="img/harvestMap.png" alt="" /></a></p>
+						<p class="overflow-hidden">Information about where birds are harvested is also important. Duck harvest is only high in areas where there are lots of ducks, and that's because those areas have good non-breeding duck habitat. So, the harvest survey can help the USFWS, state wildlife agencies, and other partners decide where they should use their resources to protect, maintain, and improve critical wetland habitats for waterfowl.</p>
 					</div>
 					<!-- TemplateEndEditable -->
 				</div><!--ends content area div-->
@@ -140,7 +150,7 @@
 	</div><!--ends content wrapper div-->
 
 	<div id="update"><div class="wrap">
-		<p>Last Updated: <!-- #BeginDate format:Am1 -->February 13, 2018<!-- #EndDate --></p>
+		<p>Last Updated: <!-- #BeginDate format:Am1 -->February 14, 2018<!-- #EndDate --></p>
 	</div></div>
 
 </div><!--ends div for mobile nav-->

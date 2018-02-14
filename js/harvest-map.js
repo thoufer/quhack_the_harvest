@@ -134,24 +134,24 @@ document.getElementById('svg1').addEventListener('mouseover', function(ev){
 		
 
 		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank</td>";
-		myTable+= "<td style='height:15px; color: black; text-align: left;'> State</td>";
+		myTable+= "<td style='height:15px; color: black; text-align: left;'>State</td>";
 		//myTable+="<td style='width: 100px; color: black; text-align: left;'>State</td></tr>";
-		//myTable+= "<td style='width: 10px; color: black; text-align: left;'> Rank cont...</td>";
+		//myTable+= "<td style='width: 10px; color: black; text-align: left;'>Rank</td>";
 		//myTable+="<td style='width: 100px; color: black; text-align: left;'>State</td></tr>";
 		/*
 		myTable+="<tr><td style='width: 10px;                   '>---------------</td>";
 		myTable+="<td     style='width: 10px; text-align: left;'>---------------</td>";
 		myTable+="<td     style='width: 100px; text-align: right;'>---------------</td></tr>";
 	*/
-	  	var myTable= "<table><tr><td style='height:15px; color: black;'>Rank</td>";
+	  	var myTable= "<table><tr><td style='height:15px; color: black;'>Rank:   State</td>";
 		//myTable+= "<td style='height:15px; color: black; text-align: left;'> State</td>";
 	  for (var i=1; i<11; i++) {
 		if (i==10){
-			myTable+="<tr><td style='height:15px;'>rank " + "" + "    "+myArray[i]+"</td>";
+			myTable+="<tr><td style='height:15px;'>" + "" + "    "+myArray[i]+"</td>";
 		//myTable+="<td style='height:15px; text-align: left;'>" + myArray[i] + "</td>";
 		}
 		else{
-		myTable+="<tr><td style='height:15px;'>rank " + i +":    "+myArray[i]+"</td>";
+		myTable+="<tr><td style='height:15px;'>" + i +":    "+myArray[i]+"</td>";
 		//myTable+="<td style='height:15px; text-align: left;'>" + myArray[i] + "</td>";
 		}
 	  }  
@@ -232,16 +232,16 @@ document.getElementById('CA').addEventListener('click', function(ev){
 		myArray[10] = var2;
 		myArray2[10] = var4;
 		
-		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank within nation.</td>";
-		myTable+= "<td style='height:15px; color: black;'>Rank within state.</td></tr>";
+		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank in Country</td>";
+		myTable+= "<td style='height:15px; color: black;'>Rank in State</td></tr>";
 	  for (var i=1; i<11; i++) {
 		if (i==10){
-			myTable+="<tr><td style='height:15px;'>rank " + "    "+myArray[i]+"</td>";
-			myTable+="<td style='height:15px;'>rank " + "    "+myArray2[i]+"</td></tr>";
+			myTable+="<tr><td style='height:15px;'>" + "    "+myArray[i]+"</td>";
+			myTable+="<td style='height:15px;'>" + "    "+myArray2[i]+"</td></tr>";
 		}
 		else{
-		myTable+="<tr><td style='height:15px;'>rank " + i +"    "+myArray[i]+"</td>";
-		myTable+="<td style='height:15px;'>rank " + i +"    "+myArray2[i]+"</td></tr>";
+		myTable+="<tr><td style='height:15px;'>" + i +"    "+myArray[i]+"</td>";
+		myTable+="<td style='height:15px;'>" + i +"    "+myArray2[i]+"</td></tr>";
 		}
 	  }  
 	   myTable+="</table>";
@@ -303,16 +303,16 @@ document.getElementById('TX').addEventListener('click', function(ev){
 	
 		myArray2[10] = var4;
 		
-		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank within nation.</td>";
-		myTable+= "<td style='height:15px; color: black;'>Rank within state.</td></tr>";
+		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank in Country</td>";
+		myTable+= "<td style='height:15px; color: black;'>Rank in State</td></tr>";
 	  for (var i=1; i<11; i++) {
 		if (i==10){
-			myTable+="<tr><td style='height:15px;'>rank " + "    "+myArray[i]+"</td>";
-			myTable+="<td style='height:15px;'>rank " + "    "+myArray2[i]+"</td></tr>";
+			myTable+="<tr><td style='height:15px;'>" + "    "+myArray[i]+"</td>";
+			myTable+="<td style='height:15px;'>" + "    "+myArray2[i]+"</td></tr>";
 		}
 		else{
-		myTable+="<tr><td style='height:15px;'>rank " + i +"    "+myArray[i]+"</td>";
-		myTable+="<td style='height:15px;'>rank " + i +"    "+myArray2[i]+"</td></tr>";
+		myTable+="<tr><td style='height:15px;'>" + i +"    "+myArray[i]+"</td>";
+		myTable+="<td style='height:15px;'>" + i +"    "+myArray2[i]+"</td></tr>";
 		}
 	  }  
 	   myTable+="</table>";
@@ -374,16 +374,16 @@ document.getElementById('ND').addEventListener('click', function(ev){
 		myArray[10] = var2;
 		myArray2[10] = var4;
 		
-		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank within nation.</td>";
-		myTable+= "<td style='height:15px; color: black;'>Rank within state.</td></tr>";
+		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank in Country</td>";
+		myTable+= "<td style='height:15px; color: black;'>Rank in State</td></tr>";
 	  for (var i=1; i<11; i++) {
 		if (i==10){
-			myTable+="<tr><td style='height:15px;'>rank " + "    "+myArray[i]+"</td>";
-			myTable+="<td style='height:15px;'>rank " + "    "+myArray2[i]+"</td></tr>";
+			myTable+="<tr><td style='height:15px;'>" + "    "+myArray[i]+"</td>";
+			myTable+="<td style='height:15px;'>" + "    "+myArray2[i]+"</td></tr>";
 		}
 		else{
-		myTable+="<tr><td style='height:15px;'>rank " + i +"    "+myArray[i]+"</td>";
-		myTable+="<td style='height:15px;'>rank " + i +"    "+myArray2[i]+"</td></tr>";
+		myTable+="<tr><td style='height:15px;'>" + i +"    "+myArray[i]+"</td>";
+		myTable+="<td style='height:15px;'>" + i +"    "+myArray2[i]+"</td></tr>";
 		}
 	  }  
 	   myTable+="</table>";
@@ -437,8 +437,8 @@ document.getElementById('LA').addEventListener('click', function(ev){
 		myArray[10] = var2;
 		myArray2[10] = var4;
 		
-		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank in nation.</td>";
-		myTable+= "<td style='height:15px; color: black;'>Rank in state.</td></tr>";
+		var myTable= "<table><tr><td style='height:15px; color: black;'>Rank in Country</td>";
+		myTable+= "<td style='height:15px; color: black;'>Rank in State</td></tr>";
 		
 	  for (var i=1; i<11; i++) {
 		if (i==10){
@@ -486,25 +486,25 @@ window.onload = function () {
     
 
    
-		//var myTable= "<table><tr><td style='height:15px; color: black;'>Rank no.</td>";
-		//myTable+= "<td style='height:15px; color: black; text-align: left;'> State</td>";
+		//var myTable= "<table><tr><td style='height:15px; color: black;'>Rank</td>";
+		//myTable+= "<td style='height:15px; color: black; text-align: left;'>State</td>";
 		//myTable+="<td style='width: 100px; color: black; text-align: left;'>State</td></tr>";
-		//myTable+= "<td style='width: 10px; color: black; text-align: left;'> Rank cont...</td>";
+		//myTable+= "<td style='width: 10px; color: black; text-align: left;'>Rank</td>";
 		//myTable+="<td style='width: 100px; color: black; text-align: left;'>State</td></tr>";
 		/*
 		myTable+="<tr><td style='width: 10px;                   '>---------------</td>";
 		myTable+="<td     style='width: 10px; text-align: left;'>---------------</td>";
 		myTable+="<td     style='width: 100px; text-align: right;'>---------------</td></tr>";
 	*/
-	  	var myTable= "<table><tr><td style='height:15px; color: black;'>Rank no.</td></tr>";
-		//myTable+= "<td style='height:15px; color: black; text-align: left;'> State</td>";
+	  	var myTable= "<table><tr><td style='height:15px; color: black;'>Rank</td></tr>";
+		//myTable+= "<td style='height:15px; color: black; text-align: left;'>State</td>";
 	  for (var i=1; i<11; i++) {
 		if (i==10){
-			myTable+="<tr><td style='height:15px;'>rank " + "" + "    "+myArray[i]+"</td>";
+			myTable+="<tr><td style='height:15px;'>" + "" + "    "+myArray[i]+"</td>";
 		//myTable+="<td style='height:15px; text-align: left;'>" + myArray[i] + "</td>";
 		}
 		else{
-		myTable+="<tr><td style='height:15px;'>rank " + i +":    "+myArray[i]+"</td>";
+		myTable+="<tr><td style='height:15px;'>" + i +":    "+myArray[i]+"</td>";
 		//myTable+="<td style='height:15px; text-align: left;'>" + myArray[i] + "</td>";
 		}
 	  }  
