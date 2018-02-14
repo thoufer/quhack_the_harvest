@@ -1,7 +1,156 @@
 <!DOCTYPE html>
-<html lang=en>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 <head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>U.S. Fish &amp; Wildlife Service - Migratory Bird Program | Conserving America's Birds</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!--edit <head> data here-->
+<meta name="description" content="">
+	<link rel="stylesheet" href="https://www.fws.gov/birdhabitat/css/main.css">
+	<link rel="stylesheet" href="https://www.fws.gov/birdhabitat/css/normalize.min.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" media="all" href="https://www.fws.gov/birdhabitat/css/mobile-menu/jquery.mmenu.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="https://www.fws.gov/birdhabitat/css/mobile-menu/extensions/jquery.mmenu.positioning.css" />
+	<link rel="stylesheet" href="https://www.fws.gov/birdhabitat/css/custom-styling.css">
+  <link rel="stylesheet" href="css/activity-map.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+<style>
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		#border-bottom: 1px dotted black;
+	}
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 300px;
+		background-color: white;
+		color: black;
+		text-align: center;
+		font-size: 60%;
+		border: 1px solid gray;
+		line-height: 120%;
+		border-radius: 6px;
+		padding: 5px 3px;
+		position: absolute;
+		z-index: 1;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -60px;
+		/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+		opacity: 0;
+		transition: opacity 1s;
+	}
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+</style>
+<!-- TemplateEndEditable -->
 </head>
-<body>
-  <p>THIS IS A TEST OF GITHUB PAGES.</p>
+
+<body class="content-page">
+<div><!--this wrapping div is used for the mobile nav-->
+	<div id="content-hero"><div class="wrap">
+		<!-- TemplateBeginEditable name="hero-image" -->
+		<!--hero image goes here-->
+		<!-- TemplateEndEditable -->
+	</div></div>
+
+	<div id="breadcrumb"><div class="wrap">
+		<!-- TemplateBeginEditable name="breadcrumb" -->
+		<!--if you want dynamic breadcrumb, leave as is-->
+		<p class="dynamic-breadcrumb"></p>
+		<!-- TemplateEndEditable -->
+	</div></div>
+
+	<div id="content-wrapper">
+		<div class="wrap">
+			<div id="side-col">
+				<!-- TemplateBeginEditable name="side-col" -->
+				<!--if you want dynamic side nav, leave as is-->
+				<!-- TemplateEndEditable -->
+			</div>
+			<div id="content">
+				<div id="page-headings">
+					<!-- TemplateBeginEditable name="headings" -->
+					<h1>Harvest Surveys</h1>
+					<h2>What do we learn from our surveys?</h2>
+					<!-- TemplateEndEditable -->
+				</div>
+				<div id="content-area">
+					<!-- TemplateBeginEditable name="content" -->
+					<p>Information that hunters provide helps the USFWS and state wildlife agencies set annual hunting regulations that minimize the risk of over-harvest and provide the most, and hopefully the best possible, hunting opportunity.</p>
+					<p>The Harvest 'Diary' surveys tell us how many people hunted ducks (... or geese, or doves, or woodcock, or ...) in each state, how many days they hunted, when and in what county, and how many birds they harvested each year.</p>
+					<p>We have conducted these surveys for many years ... years with short hunting seasons, long seasons, various daily bag limits, and a range of season dates ... and we can predict what the harvest will be for a specific season length and daily bag limit.</p>
+
+					<p><strong>Visualizations</strong></p>
+					<div class="overflow-hidden"><!--visualization #1-->
+            <div id="container">
+              <div id="map-container">
+                <svg id="map" width="960" height="600"
+                  viewBox="0 0 960 600"
+                  preserveAspectRatio="xMinYMid meet"></svg>
+              </div>
+
+              <div id="data-panel">
+                <div class="state">
+                    <span class="label state" id="state-value">Select a state.</span><br>
+                    <span class="label state">2012-2016 Average</span>
+                </div>
+                <div class="data-value">
+                  <span class="label">Days afield per hunter: </span>
+                  <span class="label" id="days-value"></span>
+                </div>
+                <div>
+                  <span class="label">Duck harvest per season: </span>
+                  <span class="label" id="bag-value"></span>
+                </div>
+              </div>
+
+						<div style="float:left;"><em>How do we know the total number of <br/>waterfowl hunters in a state?</em></div>
+						<div style="float:left" class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
+						<span class="tooltiptext">Hunters are required to register for the Harvest Information Program (HIP) in each state they hunt migratory game birds. Methods of registration vary from state to state - some states require a separate permit, others offer free HIP registration over the internet, etc. - so, before you hunt game birds, be sure you know what the state requires, especially if you're a nonresident!</span></div></p>
+						<p><div style="float:left;"><em>Someone registering for HIP might wonder <br/>"I get asked questions about my hunting when <br/>I register, is that all there is to the survey?"</em></div>
+						<div style="float:left" class="tooltip"><img src="img/birdMagn.png" width="25%" alt=""/>
+						<span class="tooltiptext">No! Questions asked during HIP registration about how many birds you harvested the previous year help make sure we send surveys to the right people ... so that, for example, we send most of our dove surveys to people who hunt doves, rather than to waterfowl hunters.</span></div>
+						</p>
+					</div>
+
+					<div class="overflow-hidden"><!--visualization #2-->
+						<p class="img-right"><img src="https://www.fws.gov/birdhabitat/img/home-cta/duck-stamp.jpg" alt="" /></p>
+						<p class="overflow-hidden">Let's put the dynamic graph here</p>
+					</div>
+
+					<div class="overflow-hidden"><!--visualization #3-->
+						<p class="img-left"><img src="https://www.fws.gov/birdhabitat/img/home-cta/duck-stamp.jpg" alt="" /></p>
+						<p class="overflow-hidden">And this will be Theo's map</p>
+					</div>
+					<!-- TemplateEndEditable -->
+				</div><!--ends content area div-->
+			</div><!--ends content div-->
+		</div><!--ends wrap div-->
+	</div><!--ends content wrapper div-->
+
+	<div id="update"><div class="wrap">
+		<p>Last Updated: <!-- #BeginDate format:Am1 -->February 13, 2018<!-- #EndDate --></p>
+	</div></div>
+
+</div><!--ends div for mobile nav-->
+
+<?php include "https://www.fws.gov/birdhabitat/includes/scripts.php" ?>
+
+<!-- TemplateBeginEditable name="content-footer" -->
+<!--bottom include: used for scripts, footers, etc-->
+<!-- TemplateEndEditable -->
 </body>
+
+<script src="js/activity-map.js" type="text/javascript"></script>
+</html>

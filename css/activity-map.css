@@ -1,0 +1,59 @@
+#content-area {
+  display: block;
+  float: left;
+  margin-right: 3.16844%;
+  width: 65.61052%;
+  padding: 0;
+  background: none;
+}
+
+.states {
+  fill: #A9BDAD;
+}
+
+.states :hover {
+  /*fill: #336699;*/
+  fill: #90A494;
+}
+
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.label {
+    color: #336699;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.state {
+    font-size: 28px;
+    display: inline;
+}
+
+.data-value {
+  margin-top: 10px;
+}
+
+#container {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+  float: left;
+}
+
+#data-panel {
+  margin-left: 50%;
+  z-index: -1;
+}
