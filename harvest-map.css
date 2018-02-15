@@ -1,0 +1,126 @@
+#us-map{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+h1{ 
+    color:black;
+    font-size:32px;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%; 
+   }
+   .statesmap{
+	float:left;
+	width:100%;
+	display:inline-block;
+
+}
+
+.table1{
+	 font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 15%;
+	height: 100%;
+	table-layout: fixed;
+	overflow: hidden;
+	float: right;
+	position: absolute;
+	margin-left: 70%;
+}
+.texas{float:left;display:inline-block;width:80%;}
+.california{float: left;display:inline-block; width:80%;}
+.louisiana{float: left;display:inline-block;width:80%;}
+.northdakota{float: left;display:inline-block;width:80%;height:40%;}
+/*
+.legend {display:inline-block; width: 200px; margin-left: 200px; margin-right: 200px;clear:both;float:left;
+}
+.legend li { text-align:center;width: 20px; margin-left: 500px; margin-right: 500px;clear:both;float:left; margin-bottom: 10; }
+.legend span { display:inline-block;border: 1px solid #ccc; float: left;text-align:center; width: 20px; height: 20px; margin-left: 20px; margin-right: 20px; }
+*/
+.legend { list-style: none;display:inline-block; margin-right: 30%; margin-left: 50px;}
+.legend li { float: left; margin-right: 200px; margin-left: 200px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/*colors */
+
+.legend .two { background-color: #99d8c9; }
+.legend .three { background-color: #66c2a4; }
+.legend .four { background-color: #2ca25f; }
+.legend .five { background-color: #006d2c; }
+
+
+/*
+overflow hidden?
+move map next to table
+combine table columns
+
+table.mytable {
+   margin-left:auto;
+    margin-right:auto;
+    width:960px;
+	overflow: hidden;
+}
+table.mytable2 {
+  margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+div.mytable {
+    background-color: #00FF00;
+    width: 100px;
+    height: 100px;
+    
+}
+*/
+
+footer{
+	margin-bottom: 0;
+}
+
+
+
+/*
+map left 
+legend bottom
+table right
+mouseout
+color counties by state rank
+*/
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
