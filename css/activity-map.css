@@ -7,13 +7,13 @@
   background: none;
 }
 
-.states {
-  fill: #A9BDAD;
+.states {/*A9BDAD*/
+  fill: #66c2a4;
 }
 
 .states :hover {
-  /*fill: #336699;*/
-  fill: #90A494;
+  /*fill: #336699;90A494*/
+  fill: #002868;
 }
 
 .state-borders {
@@ -26,14 +26,15 @@
 }
 
 .label {
-    color: #336699;
+    color: #002868;
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 20px;
+   /* font-size: 20px;*/
 }
 
 .state {
-    font-size: 28px;
+    /*font-size: 28px;*/
     display: inline;
+	font-weight: bold;
 }
 
 .data-value {
@@ -42,18 +43,20 @@
 
 #container {
   width: 100%;
-  margin: auto;
-  padding: 10px;
+  margin-top: -70px;
+  padding: 0px;
   position: relative;
 }
 
 #map {
   width: 100%;
   height: 600px;
+  margin-bottom: -70px;
   float: left;
 }
 
 #data-panel {
-  margin-left: 50%;
-  z-index: -1;
+ /* margin-left: 50%;
+align: center;
+  z-index: -1;*/
 }
