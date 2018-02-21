@@ -124,34 +124,3 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-
-/* barchart css*/
-#mapid {
-   margin-bottom: 20px;
-}
-
-.bar {
-  fill: #4b79b4; /* lightsteelblue family */
-}
-
-
-.button-holder{
-  margin-left: 80px;
-}
-
-.axis path,
-.axis line {
-   stroke: #000;
-}
-
-.axis-y text {
-   font-size: 14px;
-}
-
-.btn .btn-primary {
-   margin-right: 20px;
-}
-
-.button-holder{
-    text-align: center;
-}
