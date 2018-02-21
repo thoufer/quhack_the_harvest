@@ -19,8 +19,10 @@
 	<link type="text/css" rel="stylesheet" media="all" href="https://www.fws.gov/birdhabitat/css/mobile-menu/extensions/jquery.mmenu.positioning.css" />
 	<link rel="stylesheet" href="https://www.fws.gov/birdhabitat/css/custom-styling.css">
   <link rel="stylesheet" href="css/activity-map.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
+	<script src="js/HarvData.json"></script>
 
 <style>
 	.tooltip {
@@ -125,8 +127,13 @@
 					</div>
 
 					<div class="overflow-hidden"><!--visualization #2-->
-						<p class="img-right"><img src="https://www.fws.gov/birdhabitat/img/home-cta/duck-stamp.jpg" alt="" /></p>
-						<p class="overflow-hidden">Let's put the dynamic graph here</p>
+						<div class="button-holder">
+								<a class="btn btn-md btn-primary" href="javascript:update(0);" role="button" aria-pressed="true">Northeast</a>
+								<a class="btn btn-md btn-primary" href="javascript:update(1);" role="button">Northwest</a>
+								<a class="btn btn-md btn-primary" href="javascript:update(2);" role="button">Southeast</a>
+								<a class="btn btn-md btn-primary" href="javascript:update(3);"role="button">Southwest</a>
+						</div>
+						<div id="mapid"></div>
 					</div>
 
 					<div class="overflow-hidden"><!--visualization #3-->
