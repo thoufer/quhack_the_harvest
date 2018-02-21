@@ -70,11 +70,6 @@ align: center;
   fill: #4b79b4; /* lightsteelblue family */
 }
 
-
-.button-holder{
-  margin-left: 80px;
-}
-
 .axis path,
 .axis line {
    stroke: #000;
@@ -90,4 +85,8 @@ align: center;
 
 .button-holder{
     text-align: center;
+}
+
+.button-holder a {
+  text-decoration: none;
 }
