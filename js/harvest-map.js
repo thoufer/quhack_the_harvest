@@ -1,108 +1,24 @@
 
 svg1=document.getElementById('svg1');
-svgAlaska=document.getElementById('svgAlaska');
-svgAlabama=document.getElementById('svgAlabama');
-svgArkansas=document.getElementById('svgArkansas');
-svgArizona=document.getElementById('svgArizona');
+
 svgCalifornia=document.getElementById('svgCalifornia');
-svgColorado=document.getElementById('svgColorado');
-svgHawaii=document.getElementById('svgHawaii');
-svgConnecticut=document.getElementById('svgConnecticut');
-svgDelaware=document.getElementById('svgDelaware');
-svgFlorida=document.getElementById('svgFlorida');
-svgGeorgia=document.getElementById('svgGeorgia');
-svgIowa=document.getElementById('svgIowa');
-svgIdaho=document.getElementById('svgIdaho');
-svgIllinois=document.getElementById('svgIllinois');
-svgIndiana=document.getElementById('svgIndiana');
-svgKansas=document.getElementById('svgKansas');
-svgKentucky=document.getElementById('svgKentucky');
+
 svgLouisiana=document.getElementById('svgLouisiana');
-svgMassachusetts=document.getElementById('svgMassachusetts');
-svgMaryland=document.getElementById('svgMaryland');
-svgMaine=document.getElementById('svgMaine');
-svgMichigan=document.getElementById('svgMichigan');
-svgMinnesota=document.getElementById('svgMinnesota');
-svgMissouri=document.getElementById('svgMissouri');
-svgMississipi=document.getElementById('svgMississipi');
-svgMontana=document.getElementById('svgMontana');
-svgNorthcarolina=document.getElementById('svgNorthcarolina');
+
 svgNorthdakota=document.getElementById('svgNorthdakota');
-svgNebraska=document.getElementById('svgNebraska');
-svgNewhampshire=document.getElementById('svgNewhampshire');
-svgNewjersey=document.getElementById('svgNewjersey');
-svgNewmexico=document.getElementById('svgNewmexico');
-svgNevada=document.getElementById('svgNevada');
-svgNewyork=document.getElementById('svgNewyork');
-svgOhio=document.getElementById('svgOhio');
-svgOklahoma=document.getElementById('svgOklahoma');
-svgOregon=document.getElementById('svgOregon');
-svgPennsylvania=document.getElementById('svgPennsylvania');
-svgRhodeisland=document.getElementById('svgRhodeisland');
-svgsvgSouthcarolina=document.getElementById('svgSouthcarolina');
-svgsvgSouthdakota=document.getElementById('svgSouthdakota');
-svgTennessee=document.getElementById('svgTennessee');
+
 svgTexas=document.getElementById('svgTexas');
-svgUtah=document.getElementById('svgUtah');
-svgVirginia=document.getElementById('svgVirginia');
-svgVermont=document.getElementById('svgVermont');
-svgWashington=document.getElementById('svgWashington');
-svgWisconsin=document.getElementById('svgWisconsin');
-svgWestvirginia=document.getElementById('svgWestvirginia');
-svgWyoming=document.getElementById('svgWyoming');
 
 //make for each state
 
-svgAlaska.style.display = 'none';
-svgAlabama.style.display = 'none';
-svgArkansas.style.display = 'none';
-svgArizona.style.display = 'none';
+
 svgCalifornia.style.display = 'none';
-svgColorado.style.display = 'none';
-svgHawaii.style.display = 'none';
-svgConnecticut.style.display = 'none';
-svgDelaware.style.display = 'none';
-svgFlorida.style.display = 'none';
-svgGeorgia.style.display = 'none';
-svgIowa.style.display = 'none';
-svgIdaho.style.display = 'none';
-svgIllinois.style.display = 'none';
-svgIndiana.style.display = 'none';
-svgKansas.style.display = 'none';
-svgKentucky.style.display = 'none';
+
 svgLouisiana.style.display = 'none';
-svgMassachusetts.style.display = 'none';
-svgMaryland.style.display = 'none';
-svgMaine.style.display = 'none';
-svgMichigan.style.display = 'none';
-svgMinnesota.style.display = 'none';
-svgMissouri.style.display = 'none';
-svgMississippi.style.display = 'none';
-svgMontana.style.display = 'none';
-svgNorthcarolina.style.display = 'none';
+
 svgNorthdakota.style.display = 'none';
-svgNebraska.style.display = 'none';
-svgNewhampshire.style.display = 'none';
-svgNewjersey.style.display = 'none';
-svgNewmexico.style.display = 'none';
-svgNevada.style.display = 'none';
-svgNewyork.style.display = 'none';
-svgOhio.style.display = 'none';
-svgOklahoma.style.display = 'none';
-svgOregon.style.display = 'none';
-svgPennsylvania.style.display = 'none';
-svgRhodeisland.style.display = 'none';
-svgSouthcarolina.style.display = 'none';
-svgSouthdakota.style.display = 'none';
-svgTennessee.style.display = 'none';
+
 svgTexas.style.display = 'none';
-svgUtah.style.display = 'none';
-svgVirginia.style.display = 'none';
-svgVermont.style.display = 'none';
-svgWashington.style.display = 'none';
-svgWisconsin.style.display = 'none';
-svgWestvirginia.style.display = 'none';
-svgWyoming.style.display = 'none';
 
 settable=0;
 var timeout;
