@@ -44,13 +44,15 @@ function init(){
 
     svg.append("g")
         .attr("class", "axis axis-y")
-        .call(yAxis)
+        .call(yAxis);
+
+    svg.append("g")
       .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 50)
+        .attr("y", 10)
         .attr("dy", "0.71em")
         .attr("text-anchor", "end")
-        .text("Harvest");
+        .text("Proportion of Total Harvest");
 
     svg.append("g")
       .selectAll("text")
