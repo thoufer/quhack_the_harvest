@@ -14,12 +14,15 @@ hunterStats.fn<-function(tableName="dbo.DkGsEsts_ESilverman",interval=10) {
   
   out<- diaryData %>% filter(Season > max(Season)-interval) %>%
     group_by(St) %>%
-     summarise(duckBagPH = mean(Duck_BPH), duckHunters=mean(DuckHunters),
-               gooseBagPH=mean(Goose_BPH), gooseHunters=mean(GooseHunters),
-               # This is the days/hunter ducks and days/hunter geese weighted by number of hunters in each category
-               daysAfieldPH= mean((DuckDays+GooseDays)/(DuckHunters+GooseHunters))) %>% 
-     mutate(duckBagPH = round(duckBagPH), duckHunters=(100*round(duckHunters/100)), 
-            gooseBagPH = round(gooseBagPH), gooseHunters=(100*round(gooseHunters/100)), 
-            daysAfieldPH= round(daysAfieldPH))
+     summarise(duckBagPH = mean(Duck_BPH), duckHunters = mean(DuckHunters),
+               gooseBagPH = mean(Goose_BPH), gooseHunters = mean(GooseHunters),
+               duckDaysAfieldPH= mean(DuckDays/DuckHunters), gooseDaysAfieldPH= mean(GooseDays/GooseHunters)) %>% 
+     mutate(name = state.name[match(out$St,state.abb)], duck_bag = round(duckBagPH), duck_hunters = (100*round(duckHunters/100)), 
+            goose_bag = round(gooseBagPH), goose_hunters = (100*round(gooseHunters/100)), 
+            duck_daysAfield = round(duckDaysAfieldPH), goose_daysAfield = round(gooseDaysAfieldPH)) %>%
+    select(name, St, duck_bag, duck_hunters, duck_daysAfield, goose_bag, goose_hunters, goose_daysAfield)
   
+  names(out)[2]<-"abbrev"
+  
+  out
 }
