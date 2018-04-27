@@ -1,0 +1,50 @@
+state,hvstPercentile,rank,bin,species
+AK,0.26,37,4,Mallard;Wigeon;Pintail
+AL,0.36,32,4,Wood Duck;Gadwall;Mallard
+AR,0.92,4,1,Mallard;Gadwall;Green-winged Teal
+AZ,0.16,42,4,Mallard;Green-winged Teal;Shoveler
+CA,0.96,2,1,Green-winged Teal;Mallard;Shoveler
+CO,0.4,30,4,Mallard;Green-winged Teal;Gadwall
+CT,0.08,46,4,Mallard;Long-Tailed Duck;Wood Duck
+DE,0.24,38,4,Mallard;Green-winged Teal;Black Duck
+FL,0.42,29,4,Ring-Necked Duck;Blue-winged Teal;Green-winged Teal
+GA,0.38,31,4,Wood Duck;Mallard;Ring-Necked Duck
+IA,0.52,24,3,Mallard;Blue-winged Teal;Wood Duck
+ID,0.62,19,3,Mallard;Wigeon;Green-winged Teal
+IL,0.86,7,2,Mallard;Wood Duck;Gadwall
+IN,0.3,35,4,Mallard;Wood Duck;Gadwall
+KS,0.66,17,3,Mallard;Blue-winged Teal;Gadwall
+KY,0.32,34,4,Mallard;Gadwall;Wood Duck
+LA,0.98,1,1,Gadwall;Blue-winged Teal;Green-winged Teal
+MA,0.12,44,4,Mallard;Common Eider;Black Duck
+MD,0.6,20,3,Mallard;Bufflehead;Wood Duck
+ME,0.18,41,4,Mallard;Wood Duck;Common Eider
+MI,0.76,12,3,Mallard;Wood Duck;Bufflehead
+MN,0.9,5,1,Mallard;Wood Duck;Blue-winged Teal
+MO,0.84,8,2,Mallard;Gadwall;Green-winged Teal
+MS,0.68,16,3,Mallard;Gadwall;Green-winged Teal
+MT,0.34,33,4,Mallard;Wigeon;Green-winged Teal
+NC,0.72,14,3,Wood Duck;Mallard;Green-winged Teal
+ND,0.88,6,2,Mallard;Gadwall;Blue-winged Teal
+NE,0.56,22,3,Mallard;Blue-winged Teal;Green-winged Teal
+NH,0.06,47,4,Mallard;Wood Duck;Black Duck
+NJ,0.28,36,4,Mallard;Bufflehead;Black Duck
+NM,0.14,43,4,Mallard;Wigeon;Gadwall
+NV,0.2,40,4,Mallard;Green-winged Teal;Shoveler
+NY,0.7,15,3,Mallard;Wood Duck;Black Duck
+OH,0.46,27,4,Mallard;Wood Duck;Green-winged Teal
+OK,0.74,13,3,Mallard;Gadwall;Green-winged Teal
+OR,0.8,10,2,Mallard;Wigeon;Green-winged Teal
+PA,0.54,23,3,Mallard;Wood Duck;Black Duck
+RI,0.02,49,4,Mallard;Black Duck;Bufflehead
+SC,0.48,26,4,Wood Duck;Mallard;Green-winged Teal
+SD,0.64,18,3,Mallard;Gadwall;Blue-winged Teal
+TN,0.58,21,3,Mallard;Gadwall;Wood Duck
+TX,0.94,3,1,Gadwall;Blue-winged Teal;Green-winged Teal
+UT,0.5,25,3,Mallard;Green-winged Teal;Gadwall
+VA,0.44,28,4,Mallard;Wood Duck;Bufflehead
+VT,0.1,45,4,Mallard;Wood Duck;Green-winged Teal
+WA,0.78,11,3,Mallard;Wigeon;Green-winged Teal
+WI,0.82,9,2,Mallard;Wood Duck;Green-winged Teal
+WV,0.04,48,4,Mallard;Wood Duck;Black Duck
+WY,0.22,39,4,Mallard;Green-winged Teal;Wigeon
